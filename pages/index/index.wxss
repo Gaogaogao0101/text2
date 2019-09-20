@@ -1,0 +1,121 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.container .top{
+  position: relative;
+  background-color:  silver;
+}
+
+.container .top .left{
+  position: absolute;
+  left: 3rpx;
+  top:3rpx;
+  height: 50rpx;
+  width: 50rpx;
+  
+}
+.container .top .text{
+  text-align: center
+}
+
+.container .top .right{
+position: absolute;
+  right: 50rpx;
+  top:0rpx;
+  height: 50rpx;
+  width: 50rpx;
+
+}
+.container .top .right1{
+  position: absolute;
+  right: 3rpx;
+  top:3rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.container .top .middle{
+  flex:4
+}
+
+.container .found{
+  color: #2399AB;
+  padding: 20rpx;
+  font-weight: bold
+}
+
+.container .recommend {
+  color: "#000000";
+  padding: 20rpx;
+  font-weight: bold
+}
+.container .swiper{
+  height: 300px
+}
+.dots view{
+  background-color: #808080;
+  float:left;
+   height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin: 2px;
+}
+.dots .dot-active{
+  background-color: #2399AB;
+}
+.container{
+  height: 1000px
+}
+
+.dots{
+  margin: 0 auto;
+  width: 96px
+}
+
+.container .one{
+  height: 405px;
+  border-bottom:2px solid #aaa
+}
+.slide-image{
+  width: 100%
+}
+.one{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px
+}
+.two{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.three{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.four{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.created_at{
+  color: #2399AB;
+  font-size: 15px
+}

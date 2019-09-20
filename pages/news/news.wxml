@@ -1,0 +1,6 @@
+<view class="all" wx:for="{{lists}}" wx:key="index" bindtap="go" data-id='{{item.id}}'>
+<!-- <navigator url="../details/details?url=https://itfun.tv/news/{{item.id}}"> -->
+<view class="top">{{item.title}}</view>
+<view class="bottom">{{item.created_at}}</view>
+<!-- </navigator> -->
+</view>

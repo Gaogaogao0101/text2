@@ -1,0 +1,27 @@
+<import src="/towxml/entry.wxml" />
+<view class="lists">
+  <view class="top">{{course.name}}</view>
+  <view class="bottom" wx:for="{{chapters}}" bindtap="goes" data-id="{{item.id}}">
+    <image src="../../icons/zanting.png"></image>
+    <view class="two">{{item.title}}</view>
+    <view class="three">{{item.time}}</view>
+  </view>
+</view>
+
+<view class="isShow3 {{isShow?'isShow':'hidden'}}">
+
+  <view class="videos">
+    <video src="{{chapter.video}}" controls></video>
+  </view>
+  <view class="class_list" bindtap="go">
+    <image src="../../icons/liebiao.png"></image>
+    <view>课程列表</view>
+  </view>
+  <scroll-view scroll-y style="height: 800px;">
+    <view class="fonts ">
+      <template is="entry" data="{{...article}}" />
+      <!-- <text>{{chapter.body}}</text> -->
+    </view>
+  </scroll-view>
+</view>
+<view class="{{isShow?'':'back'}}" bindtap="go"></view>

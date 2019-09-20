@@ -1,0 +1,52 @@
+<view class="all">
+  <view class="img">
+    <image src="{{course.photo}}"></image>
+  </view>
+  <view class="text">
+    <view class="title">{{course.name}}</view>
+    <view class="cont {{isShow?'':'hidden1'}}">
+      <text class="con">{{course.body}}</text>
+       <view class="shade {{isShow?'':'white'}}"></view>
+    </view>
+   
+    <view bindtap="isShow" class="imge">
+      <image src="../../icons/xiangxia.png" class="xiangxia {{isShow?'':'hidden2'}}"></image>
+      <image src="../../icons/xiangshang.png" class="xiangxia {{isShow?'hidden2':''}}"></image>
+    </view>
+  </view>
+  <view class="video" wx:for="{{chapters}}" bindtap="skip" data-id="{{item.id}}">
+    <view class="left">
+      <view class="trilateral"></view>
+      <view class="num">{{index}}</view>
+    </view>
+    <view class="right">
+      <view class="headline">{{item.title}}</view>
+      <text class="free"></text>
+      <text class="date">{{item.updated_at}}</text>
+    </view>
+  </view>
+  <view class="teacher">
+    <view class="left">
+      <image src="{{teacher.avatar}}"></image>
+    </view>
+    <view class="right">
+      <view class="fullname">{{teacher.fullname}}</view>
+      <view class="company">{{teacher.company}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view>相关课程</view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view style=" white-space: nowrap; display: flex;width: 100%">
+        <view wx:for="{{relation_courses}}">
+          <view class="slide" bindtap="leave" data-id="{{item.id}}">
+            <image src="{{item.photo}}"></image>
+            <view class="title">
+              <text>{{item.title}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

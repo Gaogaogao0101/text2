@@ -1,0 +1,85 @@
+.content .top .con{
+  display: flex;
+}
+.content{
+  font-size: 24rpx;
+}
+.content .top .con view{
+  padding: 20rpx;
+}
+.content .bottom .top .left image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.content .bottom .top{
+  display: flex;
+  background-color: #F7F06A;
+  color: #ffffff;
+}
+.content .bottom .top .left{
+  padding-top: 24rpx;
+  padding-right: 24rpx;
+  padding-bottom: 24rpx;
+  padding-left: 60rpx;
+}
+.content .bottom .top .right{
+  padding-top: 15rpx;
+}
+.content .bottom .bot .the_shang{
+  display: flex;
+  border-bottom:2rpx solid #C3C3C3;
+}
+.content .bottom .bot .the_xia .the_top{
+  border-bottom:2rpx solid #C3C3C3;
+}
+.content .bottom .bot .the_xia .the_bottom{
+  border-bottom:2rpx solid #C3C3C3;
+}
+.content .bottom .bot .the_shang .the_zuo{
+  padding: 45rpx 45rpx 70rpx 45rpx;
+}
+.content .bottom .bot .the_shang .the_zuo .my{
+  width: 205rpx;
+  height: 205rpx;
+  border-radius: 50%;
+}
+.content .bottom .bot .the_shang .the_you{
+  margin: 80rpx 0 0 45rpx;
+}
+.content .bottom .bot .the_shang .the_you view{
+  padding-bottom: 20rpx;
+}
+.content .bottom .bot .the_xia .the_top{
+  display: flex;
+  padding: 13rpx 0 13rpx 3rpx;
+}
+.content .bottom .bot .the_xia .the_top .the_right{
+  padding-left: 80rpx;
+}
+.content .bottom .bot .the_xia .the_top .the_left{
+  color: #C3C3C3;
+}
+.content .bottom .bot .the_xia .the_bottom{
+  padding: 13rpx 0 13rpx 3rpx;
+}
+.content .bottom .bot{
+  margin: 0 30rpx 0 30rpx;
+}
+
+.center{
+  width: 100%;
+  margin-top:50%;
+   text-align: center;
+}
+.login{
+  margin-bottom: 40rpx;
+  background-color: #1F99B0;
+  margin-left: 240rpx;
+  margin-right: 240rpx;
+  border-radius:5%;
+  height: 60rpx;
+  text-align: center;
+}
+.hint{
+  font-size: 35rpx;
+}

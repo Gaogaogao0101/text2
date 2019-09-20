@@ -1,0 +1,26 @@
+.sousuo{
+  width: 45rpx;
+  height: 45rpx;
+}
+.hunt{
+  display: flex;
+  margin: 16rpx;
+}
+.hot_search{
+  color: #E0E0E0;
+  font-size: 30rpx;
+}
+.all{
+  margin:0 15rpx 0 15rpx;
+}
+.hot{
+  background-color:#1F99B0;
+  padding: 5rpx;
+  border-radius: 5rpx;
+  margin: 12rpx;
+
+}
+.fa{
+    display: flex;
+  flex-wrap:wrap;
+}

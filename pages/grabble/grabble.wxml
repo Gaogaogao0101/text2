@@ -1,0 +1,8 @@
+<view wx:for="{{lists}}">
+  <image src="{{item.photo}}" style="width:100%"></image>
+  <view class="na">{{item.name}}</view>
+  <view>{{item.tags}}</view>
+  <view class="bo">
+    <text>{{item.body}}</text>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+<view class="all">
+  <view class="nav">
+    <view class="swiper">
+      <view class="section section_gap">
+        <scroll-view class="scroll-view_H" scroll-x="true">
+          <view style="width: 100%" class="web">
+            <view wx:for="{{categorie}}" bindtap="changeColor" data-index="{{index}}" data-slug="{{item.slug}}">
+              <view class="underline">
+                <text class="{{index == slide_index ? 'ac':''}}">{{item.name}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="con">
+    <scroll-view scroll-x>
+      <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="scrolly">
+
+        <view class="scroll" wx:for="{{likes_courses}}">
+          <navigator url="../particulars/particulars?id={{item.id}}">
+            <image src="{{item.photo}}" style="width:100%"></image>
+            <view class="na">{{item.name}}</view>
+            <view class="bo">
+              <text>{{item.body}}</text>
+            </view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </scroll-view>
+  </view>
+
+</view>

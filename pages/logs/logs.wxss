@@ -1,0 +1,61 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.log-item {
+  margin: 10rpx;
+}
+
+.cate {
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.web {
+  display: flex;
+}
+
+.scroll-view_H .web .underline {
+  font-size: 15px;
+  width: 90px;
+  margin: 1rpx;
+  text-align: center;
+}
+
+.swiper {
+  border-bottom: 2px solid #cdcdcd;
+  height: 30px;
+}
+
+.ac {
+  border-bottom: 3px solid #0094ff;
+  padding-bottom: 3px;
+}
+
+.underline {
+  height: 25px;
+}
+
+.scroll .bo {
+  font-size: 29rpx;
+  color: #cdcdcd;
+  height: 150rpx;
+  /* overflow: hidden; *//* text-overflow: ellipsis; *//* white-space: nowrap; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.scroll .na {
+  font-weight: bold;
+}
+
+.scrolly {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}

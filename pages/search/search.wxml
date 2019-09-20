@@ -1,0 +1,12 @@
+<view class="all">
+  <view class="hunt">
+    <image src="../../icons/sousuo.png" class="sousuo"></image>
+    <input class="seek" bindconfirm="book"></input>
+  </view>
+  <view class="bottom">
+    <view class="hot_search">热门搜索</view>
+    <view class="fa">
+      <text class="hot" wx:for="{{lists}}" bindtap="go" data-value="{{item}}">{{item}}</text>
+    </view>
+  </view>
+</view>

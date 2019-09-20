@@ -1,0 +1,52 @@
+<view class="big">
+  <view class="content" wx:if="{{access_token}}">
+    <view class="top">
+      <view class="con" >
+        <view class="homepage">我的主页</view>
+        <view class="like">喜欢的课程</view>
+        <view class="history">观看课程</view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="top">
+        <view class="left">
+          <image src="../../icons/mine1.png"></image>
+        </view>
+        <view class="right">
+          <view class="shang">所有在线课程都可免费观看</view>
+          <view class="xia">报名线下班，每班6-10人，老学员都推荐！</view>
+        </view>
+      </view>
+      <view class="bot">
+        <view class="the_shang">
+          <view class="the_zuo" >
+            <image src="{{lists.photo}}" class="my"></image>
+          </view>
+          <view class="the_you">
+            <view>{{lists.fullname}}</view>
+            <view>学籍编号：{{lists.id}}</view>
+            <view>免费会员</view>
+          </view>
+        </view>
+        <view class="the_xia">
+          <view class="the_top">
+            <view class="the_left">电子邮箱</view>
+            <view class="the_right">{{lists.email}}</view>
+          </view>
+          <view class="the_top">
+            <view class="the_left">性别</view>
+            <view class="the_right">{{lists.sex == 1 ?'男'
+            :'女'}}</view>
+          </view>
+          <view class="the_bottom">点击退出</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="all" wx:else>
+    <view class="center">
+      <view class="login" bindtap="register">登录</view>
+      <view class="hint">您必须登录后才能访问</view>
+    </view>
+  </view>
+</view>

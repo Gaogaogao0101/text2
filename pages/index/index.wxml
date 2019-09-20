@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <image src="../../icons/tishi.png" class="left" bindtap="news"></image>
+    <view class="text">发现</view>
+    <image src="../../icons/sousuo.png" class="right" bindtap="grabble"></image>
+    <image src="../../icons/gengduo.png" class="right1"></image>
+  </view>
+  <view class="one">
+    <view class="found">发现</view>
+
+    <view class="recommend">推荐课程</view>
+
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper" bindchange="onChange" >
+      <block wx:for="{{lists}}">
+        <swiper-item  bindtap="go" data-id="{{item.id}}">
+          <image src="{{item.photo}}" class="slide-image" width="355" height="150" />
+          <view class="created_at">{{item.created_at}}</view>
+          <view>{{item.name}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="dots">
+      <block wx:for="{{lists}}" wx:key="index">
+        <view class="{{index==slide_index?'yuandian dot-active':'yuandian'}}"></view>
+      </block>
+    </view>
+  </view>
+  <view class="two">
+    <view class="recommend">课程发布日历</view>
+    <scroll-view scroll-x="true">
+      <view class="section section_gap" style=" white-space: nowrap; display: flex;width: 2000px">
+
+        <view wx:for="{{new_courses}}" bindtap="go" data-id="{{item.id}}">
+          <image src="{{item.photo}}" class="slide-image" width="355" height="150" />
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.updated_at}}</view>
+        </view>
+      </view>
+
+    </scroll-view>
+
+  </view>
+  <view class="three">
+    <view class="recommend">最受欢迎课程</view>
+    <scroll-view scroll-x="true">
+      <view class="section section_gap" style=" white-space: nowrap; display: flex;width: 2000px">
+
+        <view wx:for="{{likes_courses}}" bindtap="go" data-id="{{item.id}}">
+          <image src="{{item.photo}}" class="slide-image" width="355" height="150" />
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.updated_at}}</view>
+        </view>
+      </view>
+
+    </scroll-view>
+
+  </view>
+  <view class="four">
+    <view class="recommend">入门/推荐课程</view>
+    <scroll-view scroll-x="true">
+      <view class="section section_gap" style=" white-space: nowrap; display: flex;width: 2000px">
+
+        <view wx:for="{{recommended_courses}}" bindtap="go" data-id="{{item.id}}">
+          <image src="{{item.photo}}" class="slide-image" width="355" height="150" />
+          <view class="name">{{item.name}}</view>
+          <view class="time">{{item.updated_at}}</view>
+        </view>
+      </view>
+
+    </scroll-view>
+
+  </view>
+</view>

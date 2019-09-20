@@ -1,0 +1,82 @@
+<view class="total">
+  <view class="top">
+    <view class="in">
+      <view class="img">
+        <image src="../../icons/zuojiantou.png" class="zuojiantou"></image>
+      </view>
+      <view bindtap="change" data-index="{{index}}" class="ins" wx:for="{{categorie}}" wx:key="index">
+        <view class="{{index == slide_index ? 'dl active':'dl'}}">{{item}}</view>
+
+      </view>
+      <view class="sy" bindtap="go_home">首页</view>
+    </view>
+  </view>
+  <view class="below" wx:if="{{slide_index==0}}">
+    <form bindsubmit="login" bindreset="formReset">
+      <view class="dz">
+        <view>电子邮件</view>
+        <input type="text" placeholder="电子邮件" name="user"></input>
+      </view>
+      <view class="password">
+        <view>密码</view>
+        <input type="password" placeholder="密码" name="password"></input>
+      </view>
+      <!-- <view class="enter">登录</view> -->
+      <button class="ring_up" form-type="submit">登录</button>
+    </form>
+  </view>
+  <view class="sign" wx:else>
+    <form bindsubmit="matriculation" >
+      <view class="xm">
+        <view class="shang">
+          <view class="zuo">
+            <text>姓</text>
+            <input type="text" placeholder="姓" class="xing"></input>
+          </view>
+          <view class="you">
+            <text>名</text>
+            <input type="text" placeholder="名" class="ming"></input>
+          </view>
+        </view>
+        <view class="xia">
+          <text>*请实名登记你的信息</text>
+        </view>
+        <view >{{error_email}}</view>
+      </view>
+      <view class="yj">
+        <text>电子邮件</text>
+        <input type="text" placeholder="电子邮件" class="dianzi" name="email"></input>
+      </view>
+      <view class="mm">
+        <view class="pass_top">
+          <text class="left">密码</text>
+          <text class="right">*半角英文数字6位数以上</text>
+        </view>
+        
+        <view class="pass_bottom">
+          <input type="password" placeholder="密码" class="mima" name="password"></input>
+        </view>
+        <view>{{error_password}}</view>
+      </view>
+      <view class="xb">
+        <text>性别：</text>
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+
+            男
+            <checkbox value="男" checked="false"></checkbox>
+
+            女
+            <checkbox value="女" checked="false"></checkbox>
+
+            其他
+            <checkbox value="其他" checked="false"></checkbox>
+
+          </label>
+        </checkbox-group>
+      </view>
+      <!-- <view class="zc" bindtap="enter">注册</view> -->
+      <button class="sign_in" form-type="submit">注册</button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/enter/enter",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/news/news",
+    "pages/details/details",
+    "pages/grabble/grabble",
+    "pages/particulars/particulars",
+    "pages/videos/videos"
+  ],
+  "window": {
+  
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "itfun",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "color":"#000",
+      "selectedColor": "#0078D7",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "发现",
+          "iconPath":"icons/index.png",
+          "selectedIconPath":"icons/index_active1.png"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "分类",
+          "iconPath": "./icons/index_active.png",
+          "selectedIconPath": "icons/index_active2.png"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "课程日历",
+          "iconPath": "./icons/category.png",
+          "selectedIconPath": "icons/index_active3.png"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "text": "我的",
+          "iconPath": "./icons/category_active.png",
+          "selectedIconPath": "icons/index_active4.png"
+        }
+      ]
+    },
+  "sitemapLocation": "sitemap.json"
+}

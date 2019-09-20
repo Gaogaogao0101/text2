@@ -1,0 +1,13 @@
+.bo {
+  font-size: 29rpx;
+  color: #cdcdcd;
+  height: 150rpx;
+  /* overflow: hidden; *//* text-overflow: ellipsis; *//* white-space: nowrap; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.na{
+  font-weight: bold;
+}
